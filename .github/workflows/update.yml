@@ -1,0 +1,27 @@
+name: Spielplan aktualisieren
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"   # alle 6 Stunden
+  workflow_dispatch:          # manueller Start per Knopf
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Spielplan abrufen und Kalender bauen
+        run: python spielplan.py
+      - name: Änderungen speichern
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add docs/spielplan.ics state.json
+          git diff --cached --quiet || git commit -m "Spielplan aktualisiert"
+          git push
