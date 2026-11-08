@@ -30,9 +30,9 @@
   "stamp": "20261023T085023Z"
  },
  "9559351": {
-  "seq": 0,
-  "sig": "{\"allday\": false, \"description\": \"\", \"end\": \"20261107T154500Z\", \"location\": \"Sporthalle im Benckiser Park, Habermehlstraße 4, 75172 Pforzheim\", \"start\": \"20261107T141500Z\", \"summary\": \"TGS Pforzheim vs. TB Pforzheim 2\", \"uid\": \"9559351\"}",
-  "stamp": "20261023T085023Z"
+  "seq": 1,
+  "sig": "{\"allday\": false, \"description\": \"\", \"end\": \"20261231T154500Z\", \"location\": \"Sporthalle im Benckiser Park, Habermehlstraße 4, 75172 Pforzheim\", \"start\": \"20261231T141500Z\", \"summary\": \"TGS Pforzheim vs. TB Pforzheim 2\", \"uid\": \"9559351\"}",
+  "stamp": "20261108T220041Z"
  },
  "9559366": {
   "seq": 0,
